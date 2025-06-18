@@ -72,3 +72,87 @@ kabum_products.csv
 ### 👩‍💻 Autora
 Desenvolvido com 💙 por Marcela Nako
 🔗 [in/marcelaabe-alvim/] | 💼 [https://github.com/maabenako?tab=repositories]
+
+# English:
+
+# 💄 Beleza na Web Scraper
+
+This project is a **product scraper** for the Brazilian e-commerce site **Beleza na Web**, developed in **Node.js** using `cheerio` and `json2csv`. It collects data directly from the store's product showcase via public API requests used by the front-end.
+
+---
+
+## 🚀 Features
+
+- Navigates through multiple product categories (Makeup, Skincare, Hair, Perfume, etc.)
+- Automatic pagination with support for up to 1000 pages per category
+- Detailed product data extraction
+- Data exported to **CSV** for easy analysis
+- Adds delay between pages and categories to avoid blocking
+
+---
+
+## 📦 Extracted Data
+
+For each listed product, the script collects:
+
+- `nome`: product name  
+- `preco_promocional` and `preco_original`: current and original prices  
+- `link`: product URL  
+- `descricao`: short description  
+- `nota_media`: average rating  
+- `qtd_avaliacoes`: number of reviews  
+- `tag`: promotional label (e.g. "new", "exclusive")  
+- `condicao`: installment/payment condition text  
+- `percentual_desconto`: discount percentage (if any)  
+- `sku`: product identifier  
+- `id_seller` and `nome_loja`: seller data  
+
+---
+
+## 🛠️ Technologies Used
+
+- Node.js  
+- cheerio  
+- axios or node-fetch  
+- json2csv  
+- fs
+
+---
+
+## 🧪 How to Use
+
+### 1. Clone the repository  
+```bash
+git clone https://github.com/maabenako/belezaweb-scraper.git  
+cd belezaweb-scraper  
+```
+### 2. Install dependencies  
+```bash 
+npm install cheerio node-fetch json2csv  
+```
+Or, if you are using axios instead of node-fetch:  
+```bash
+npm install cheerio axios json2csv  
+```
+### 3. Run the script  
+```bash
+node beleza_scraper.js  
+```
+---
+
+## 📁 Output
+
+The result will be saved in a file named:  
+```bash
+kabum_products.csv  
+```
+---
+
+## 👩‍💻 Author
+
+Developed with 💙 by **Marcela Nako**  
+🔗 [LinkedIn](https://www.linkedin.com/in/marcelaabe-alvim/)  
+💼 [GitHub](https://github.com/maabenako?tab=repositories)
+
+---
+
